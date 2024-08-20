@@ -1,0 +1,67 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navigation Menu Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #0000ff, #00ffff);
+    padding: 10px 0;
+    transition: background 0.3s ease;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: color 0.3s ease, background 0.3s ease;
+    border-radius: 4px;
+}
+
+/* Hover Effect */
+.navbar ul li a:hover {
+    background-color: #ffffff;
+    color: #0000ff;
+}
+
+/* Scroll Effect */
+.scrolled {
+    background: linear-gradient(90deg, #ff7f50, #ff4500);
+}
+
+/* Content Sections */
+section {
+    padding: 100px;
+    text-align: center;
+    margin-top: 70px; /* Adjust to fit the fixed navbar */
+}
+
+#home {
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#about, #services, #contact {
+    height: 50vh;
+    background-color: #e0e0e0;
+}
